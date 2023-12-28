@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honestly | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="review.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="content">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/Honestly.png" alt="Logo image">
+            </a>
+            <div class="topnav">
+                <p class="Welcome-msg">Welcome to Honestly! Share your opinion about anything here!</p>
+                <input type="text" placeholder="Search..">
+                <button type="submit">Submit</button>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a id="login-link" href="#">Login</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="sample-reviews">
+            <h2>Leave an Honest Review</h2>
+            <div class="reviews-container">
+                <!-- Sample review items go here -->
+                <!-- Repeat this structure for each review -->
+                <div class="sample-review">
+                    <!-- <img src="path-to-sample-image-1.jpg" alt="Sample Review 1"> -->
+                    <p>"This is a fantastic movie! I would rate it 5 stars!"</p>
+                    <br>
+                    <p>Joe Schmoe</p>
+                </div>
+                <!-- Add more sample reviews as needed -->
+            </div>
+        </div>
+
+        <div id="posters-container">
+            <div class="movie" data-movie="Avengers">
+                <img src="images/resized/avengers.jpeg" alt="avengers">
+            </div>
+
+            <div class="movie" data-movie="Fury">
+                <img src="images/resized/fury.jpg" alt="fury">
+            </div>
+
+            <div class="movie" data-movie="The Goonies">
+                <img src="images/resized/goonies.jpg" alt="goonies">
+            </div>
+
+            <div class="movie" data-movie="Lord of the Rings: The Fellowship of the Ring">
+                <img src="images/resized/lotr.jpg" alt="lotr">
+            </div>
+
+            <div class="movie" data-movie="The Pianist">
+                <img src="images/resized/pianist.jpg" alt="pianist">
+            </div>
+
+            <div class="movie" data-movie="Star Trek">
+                <img src="images/resized/startrek.jpg" alt="startrek">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">Review</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Site Plan</a>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <div class="popup review-popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <h2 id="popup-movie-name"></h2>
+            <div class="rating">
+                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+            </div>
+            <textarea id="review-textarea" placeholder="Write your review here..."></textarea>
+            <button id="submit-review">Submit Review</button>
+            <!-- <button class="close-popup" onclick="closePopup()">Close</button> -->
+        </div>
+    </div>
+
+    <div class="popup confirmation-popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closeConfirmationPopup()">&times;</span>
+            <p id="confirmation-text"></p>
+        </div>
+    </div>
+</body>
+</html>
